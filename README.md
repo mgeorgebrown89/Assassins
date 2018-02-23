@@ -1,2 +1,7 @@
 # Assassins
-This is the repository for my iOS mobile application "Assassins," which is my individual project for Software Engineering II and III, the final two class of the senior sequence of the Computer Science program at WOU.
+This is the repository for my iOS mobile application "Assassins," which is my individual project for Software Engineering II and III, the final two class of the senior sequence of the Computer Science program at WOU. It uses the Elimination Framework API, which is part of my [team project](https://bitbucket.org/mgeorgebrown89/sneakysoftware).
+
+## Vision Statement
+
+> For people who want to create and play the elimination-based live-action game like "Assassins" or "Gotcha!", **Assassins** is a mobile application that allows for a host to make a game, set rules, and invite other users to join the game. Assassins is played by assigning each player another play as a target, until a circle is made. The player only knows their target, not who has them as a target. Then, over the course of days/weeks, the player attempts to "assassinate" their target, whether manually by using mock-projectiles or by using the mobile app to take a picture (which will use the Elimination Framework API and photo-recognition), or get in range of their targets phone and pressing a button to assassinate them. Unlike current methods for playing Assassin, this app will remove the subjectivity that comes from a human moderator and human players determining a successful elimination and also make adding more rules and features (like player skill modifiers, a player inventory, and methods of elimination) to games easier and more fun.
+
