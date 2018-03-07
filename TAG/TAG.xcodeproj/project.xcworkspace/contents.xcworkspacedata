@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Assassins.xcodeproj">
+      location = "self:/Users/Michael/repos/TAG/Assassins/TAG.xcodeproj">
    </FileRef>
 </Workspace>

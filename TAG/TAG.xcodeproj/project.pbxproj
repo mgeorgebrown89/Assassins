@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4CC422EB204B985E0053C593 /* Assassins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assassins.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC422EB204B985E0053C593 /* TAG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC422EE204B985E0053C593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CC422F0204B985E0053C593 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CC422F3204B985E0053C593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		4CC422E2204B985E0053C593 = {
 			isa = PBXGroup;
 			children = (
-				4CC422ED204B985E0053C593 /* Assassins */,
+				4CC422ED204B985E0053C593 /* TAG */,
 				4CC422EC204B985E0053C593 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		4CC422EC204B985E0053C593 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4CC422EB204B985E0053C593 /* Assassins.app */,
+				4CC422EB204B985E0053C593 /* TAG.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4CC422ED204B985E0053C593 /* Assassins */ = {
+		4CC422ED204B985E0053C593 /* TAG */ = {
 			isa = PBXGroup;
 			children = (
 				4CC422EE204B985E0053C593 /* AppDelegate.swift */,
@@ -61,15 +61,15 @@
 				4CC422F7204B985E0053C593 /* LaunchScreen.storyboard */,
 				4CC422FA204B985E0053C593 /* Info.plist */,
 			);
-			path = Assassins;
+			path = TAG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4CC422EA204B985E0053C593 /* Assassins */ = {
+		4CC422EA204B985E0053C593 /* TAG */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CC422FD204B985E0053C593 /* Build configuration list for PBXNativeTarget "Assassins" */;
+			buildConfigurationList = 4CC422FD204B985E0053C593 /* Build configuration list for PBXNativeTarget "TAG" */;
 			buildPhases = (
 				4CC422E7204B985E0053C593 /* Sources */,
 				4CC422E8204B985E0053C593 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = Assassins;
+			name = TAG;
 			productName = Assassins;
-			productReference = 4CC422EB204B985E0053C593 /* Assassins.app */;
+			productReference = 4CC422EB204B985E0053C593 /* TAG.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4CC422E6204B985E0053C593 /* Build configuration list for PBXProject "Assassins" */;
+			buildConfigurationList = 4CC422E6204B985E0053C593 /* Build configuration list for PBXProject "TAG" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4CC422EA204B985E0053C593 /* Assassins */,
+				4CC422EA204B985E0053C593 /* TAG */,
 			);
 		};
 /* End PBXProject section */
@@ -276,10 +276,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W4QA45KSS3;
-				INFOPLIST_FILE = Assassins/Info.plist;
+				INFOPLIST_FILE = TAG/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Elimination.Assassins;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Elimination.TAG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,10 +292,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W4QA45KSS3;
-				INFOPLIST_FILE = Assassins/Info.plist;
+				INFOPLIST_FILE = TAG/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Elimination.Assassins;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Elimination.TAG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4CC422E6204B985E0053C593 /* Build configuration list for PBXProject "Assassins" */ = {
+		4CC422E6204B985E0053C593 /* Build configuration list for PBXProject "TAG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4CC422FB204B985E0053C593 /* Debug */,
@@ -314,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CC422FD204B985E0053C593 /* Build configuration list for PBXNativeTarget "Assassins" */ = {
+		4CC422FD204B985E0053C593 /* Build configuration list for PBXNativeTarget "TAG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4CC422FE204B985E0053C593 /* Debug */,
