@@ -9,14 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    var emailAddress: String = ""
+    var passwordEntry: String = ""
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var testLabelName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,4 +25,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func submitLogin(_ sender: UIButton) {
+        emailAddress = emailTextField.text!
+        passwordEntry = passwordTextField.text!
+        testLabelName.text = emailAddress
+    }
 }
