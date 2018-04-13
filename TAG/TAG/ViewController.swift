@@ -14,7 +14,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var testLabelName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +27,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func submitLogin(_ sender: UIButton) {
         emailAddress = emailTextField.text!
         passwordEntry = passwordTextField.text!
-        testLabelName.text = emailAddress
+        print(emailAddress)
+        print(passwordEntry)
     }
 }
