@@ -5,9 +5,9 @@
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Used to upload photos for profile.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Used to upload photos for profile.</string>
+	<string>$(PRODUCT_NAME) would like to access your photos.</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Used to upload photos for profile.</string>
+	<string>$(PRODUCT_NAME) would like to access your camera.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

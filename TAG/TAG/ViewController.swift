@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
 //***** login struct for JSON objects *****//
 struct login {
@@ -28,7 +30,7 @@ struct register: Codable {
     let ConfirmPassword: String    
 }
 
-class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     //***** login fields *****//
     @IBOutlet weak var emailTextField: UITextField!
@@ -44,10 +46,67 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var DOBtextField: UITextField!
     
+    @IBOutlet weak var profilePicImageView: UIImageView!
+    
+    
     //***** *****//
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+//**************** Camera & Photos *********************//
+    
+    @IBAction func takePhotoButton(_ sender: Any) {
+        //******** Camera **************//
+        let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)
+        
+        switch cameraAuthorizationStatus {
+        case .notDetermined: requestCameraPermission()
+        case .authorized: presentCamera()
+        case .restricted, .denied: alertCameraAccessNeeded()
+        }
+    }
+
+    func requestCameraPermission() {
+        AVCaptureDevice.requestAccess(for: .video, completionHandler: {accessGranted in guard accessGranted == true else {return}
+            self.presentCamera()
+        })
+    }
+    
+    func presentCamera() {
+        let photoPicker = UIImagePickerController()
+        photoPicker.sourceType = .camera
+        photoPicker.delegate = self as UIImagePickerControllerDelegate & UINavigationControllerDelegate
+        //removed "?" after self as
+        
+        self.present(photoPicker, animated: true, completion: nil)
+    }
+
+    func alertCameraAccessNeeded() {
+        let settingsAppURL = URL(string: UIApplicationOpenSettingsURLString)!
+        
+        let alert = UIAlertController(
+            title: "Need Camera Access",
+            message: "Camera access is required to make full use of this app.",
+            preferredStyle: UIAlertControllerStyle.alert
+        )
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Allow Camera", style: .cancel, handler: { (alert) -> Void in
+            UIApplication.shared.open(settingsAppURL, options: [:], completionHandler: nil)
+        }))
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let photo = info[UIImagePickerControllerOriginalImage] as! UIImage
+        // do something with the photo... set to UIImageView, save it, etc.
+        
+        profilePicImageView.image = photo
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
 //**********************************************************************//
 //****************************** Login *********************************//
 //**********************************************************************//
@@ -60,6 +119,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
 //**********************************************************************//
 //****************************** Register ******************************//
 //**********************************************************************//
+    
     //func submitPost from Saoud M. Rizwan at medium.com
     func submitPost(post: register, completion:((Error?) -> Void)?) {
         var urlComponents = URLComponents()
@@ -116,6 +176,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
             }
         }
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

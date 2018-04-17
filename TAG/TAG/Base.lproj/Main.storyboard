@@ -245,6 +245,7 @@
                                         </state>
                                         <connections>
                                             <action selector="submitRegistration:" destination="OcC-tk-xws" eventType="touchUpInside" id="iQv-4M-BYE"/>
+                                            <segue destination="pNt-FJ-PGq" kind="show" id="FZs-pY-rWu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zva-o0-3gz">
@@ -259,12 +260,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9dP-Bd-dmk">
-                                <rect key="frame" x="67" y="423" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9dP-Bd-dmk">
+                                <rect key="frame" x="20" y="362" width="335" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0n-0z-Vuk">
-                                <rect key="frame" x="179" y="560" width="127" height="36"/>
+                                <rect key="frame" x="179" y="560" width="176" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Photo Library">
@@ -272,12 +273,15 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAJ-o9-HAt">
-                                <rect key="frame" x="67" y="559" width="104" height="36"/>
+                                <rect key="frame" x="20" y="559" width="151" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Take Photo">
                                     <color key="titleColor" red="0.58823529409999997" green="0.078431372550000003" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="takePhotoButton:" destination="OcC-tk-xws" eventType="touchUpInside" id="awD-ED-nM5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -313,6 +317,7 @@
                         <outlet property="firstNameTextField" destination="A1C-Wg-rgW" id="WDB-hk-QkP"/>
                         <outlet property="lastNameTextField" destination="axp-Di-gin" id="cIL-bL-MXe"/>
                         <outlet property="phoneTextField" destination="VSi-BM-HfY" id="r9h-SY-4ZQ"/>
+                        <outlet property="profilePicImageView" destination="9dP-Bd-dmk" id="gia-ru-nto"/>
                         <outlet property="registerConfirmPasswordTextField" destination="owP-X3-9Hf" id="NpR-5D-Ucu"/>
                         <outlet property="registerEmailTextField" destination="XUf-YP-Flv" id="KOG-zU-boH"/>
                         <outlet property="registerPasswordTextField" destination="4ZC-5f-uaB" id="Ic9-Lx-faq"/>
@@ -344,6 +349,7 @@
         <image name="runner2" width="1743" height="2000"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="FZs-pY-rWu"/>
         <segue reference="RZP-Nu-2C0"/>
     </inferredMetricsTieBreakers>
 </document>
