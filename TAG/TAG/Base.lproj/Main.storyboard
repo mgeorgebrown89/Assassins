@@ -260,7 +260,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9dP-Bd-dmk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_5339" translatesAutoresizingMaskIntoConstraints="NO" id="9dP-Bd-dmk">
                                 <rect key="frame" x="20" y="362" width="335" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -345,6 +345,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IMG_5339" width="1600" height="1200"/>
         <image name="runner1" width="1713" height="2000"/>
         <image name="runner2" width="1743" height="2000"/>
     </resources>
