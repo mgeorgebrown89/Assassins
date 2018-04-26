@@ -13,7 +13,7 @@
         <!--Home View Controller-->
         <scene sceneID="XcR-uu-NuF">
             <objects>
-                <viewController title="Home View Controller" id="ie4-53-QQ9" customClass="ViewController" customModule="TAG" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home View Controller" id="ie4-53-QQ9" customClass="HomeViewController" customModule="TAG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NWJ-Xw-xMW" userLabel="Home View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,7 @@
                                                     <color key="titleColor" red="0.58823529409999997" green="0.078431372550000003" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="OcC-tk-xws" kind="show" id="tAr-Zn-PR8"/>
+                                                    <segue destination="NNW-Gg-Z6R" kind="presentation" modalTransitionStyle="flipHorizontal" id="O8B-B8-Idu"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -162,10 +162,10 @@
             </objects>
             <point key="canvasLocation" x="-1562.4000000000001" y="-572.56371814092961"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Register1 View Controller-->
         <scene sceneID="Ait-k0-mtG">
             <objects>
-                <viewController id="OcC-tk-xws" userLabel="Register View Controller" customClass="ViewController" customModule="TAG" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OcC-tk-xws" userLabel="Register1 View Controller" customClass="RegisterViewController" customModule="TAG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UMK-1P-OY9" userLabel="Register View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,7 +245,6 @@
                                         </state>
                                         <connections>
                                             <action selector="submitRegistration:" destination="OcC-tk-xws" eventType="touchUpInside" id="iQv-4M-BYE"/>
-                                            <segue destination="pNt-FJ-PGq" kind="show" id="FZs-pY-rWu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zva-o0-3gz">
@@ -254,9 +253,6 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="0.58823529409999997" green="0.078431372550000003" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="ie4-53-QQ9" kind="show" id="RZP-Nu-2C0"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -326,22 +322,160 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Uo-Hd-DQ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16.800000000000001" y="-572.56371814092961"/>
+            <point key="canvasLocation" x="7" y="-925"/>
         </scene>
-        <!--Dashboard View Controller-->
-        <scene sceneID="7Wo-pw-aNO">
+        <!--Register2 View Controller-->
+        <scene sceneID="u6t-lj-LdM">
             <objects>
-                <viewController id="GFt-V1-BCC" userLabel="Dashboard View Controller" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bAb-Jb-DfH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="NNW-Gg-Z6R" userLabel="Register2 View Controller" customClass="RegisterViewController" customModule="TAG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IAg-27-SAp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="EeC-x3-aPy"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGI-gW-Frd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3E-1n-nPl">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Gek-Uj-7Fx" userLabel="Register Button Stack View">
+                                                <rect key="frame" x="119" y="1194" width="136" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNm-mt-1x8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68" height="36"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="Submit">
+                                                            <color key="titleColor" red="0.58823529409999997" green="0.078431372550000003" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="submitRegistration:" destination="NNW-Gg-Z6R" eventType="touchUpInside" id="G3Y-sP-59T"/>
+                                                            <action selector="submitRegistration:" destination="OcC-tk-xws" eventType="touchUpInside" id="lYx-B8-u32"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITA-YU-9DH">
+                                                        <rect key="frame" x="68" y="0.0" width="68" height="36"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="Cancel">
+                                                            <color key="titleColor" red="0.58823529409999997" green="0.078431372550000003" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Register." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DM-si-shY">
+                                                <rect key="frame" x="105" y="25" width="165" height="48"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fww-NO-dH3">
+                                                <rect key="frame" x="8" y="233" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next" textContentType="name"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rKq-AE-TNb">
+                                                <rect key="frame" x="8" y="271" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next" textContentType="family-name"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="siS-R9-ilb">
+                                                <rect key="frame" x="8" y="309" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="next" textContentType="tel"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chq-Rv-buA">
+                                                <rect key="frame" x="8" y="81" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next" textContentType="username"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGU-ir-xzn">
+                                                <rect key="frame" x="8" y="119" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" textContentType="email"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sFZ-pF-9cm">
+                                                <rect key="frame" x="8" y="157" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSf-J5-bDa">
+                                                <rect key="frame" x="8" y="195" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <datePicker clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qwp-jZ-mgx">
+                                                <rect key="frame" x="8" y="347" width="359" height="47"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="546371892.41681802">
+                                                    <!--2018-04-25 17:58:12 +0000-->
+                                                </date>
+                                                <date key="minimumDate" timeIntervalSinceReferenceDate="-3187256400">
+                                                    <!--1900-01-01 11:00:00 +0000-->
+                                                </date>
+                                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                                    <!--2037-12-31 11:00:00 +0000-->
+                                                </date>
+                                            </datePicker>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Motto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oxp-Te-aFb">
+                                                <rect key="frame" x="8" y="402" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next"/>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ow1-Pq-vRw">
+                                                <rect key="frame" x="8" y="440" width="359" height="182"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1250" id="0r7-5o-ov3"/>
+                                            <constraint firstItem="7DM-si-shY" firstAttribute="top" secondItem="N3E-1n-nPl" secondAttribute="top" constant="25" id="qt9-lu-Ap8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="N3E-1n-nPl" secondAttribute="bottom" id="3je-4w-hbY"/>
+                                    <constraint firstAttribute="trailing" secondItem="N3E-1n-nPl" secondAttribute="trailing" id="9mz-GA-AJT"/>
+                                    <constraint firstItem="N3E-1n-nPl" firstAttribute="leading" secondItem="QGI-gW-Frd" secondAttribute="leading" id="AL0-yi-ZbJ"/>
+                                    <constraint firstItem="N3E-1n-nPl" firstAttribute="top" secondItem="QGI-gW-Frd" secondAttribute="top" id="V4W-2l-5cT"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="JCd-Ba-cS5" firstAttribute="trailing" secondItem="QGI-gW-Frd" secondAttribute="trailing" id="Ajr-nk-wT7"/>
+                            <constraint firstItem="QGI-gW-Frd" firstAttribute="top" secondItem="IAg-27-SAp" secondAttribute="top" id="HSo-mr-CjI"/>
+                            <constraint firstItem="JCd-Ba-cS5" firstAttribute="bottom" secondItem="QGI-gW-Frd" secondAttribute="bottom" id="aEb-ir-WXO"/>
+                            <constraint firstItem="N3E-1n-nPl" firstAttribute="width" secondItem="IAg-27-SAp" secondAttribute="width" id="rD4-Bi-QR7"/>
+                            <constraint firstItem="QGI-gW-Frd" firstAttribute="leading" secondItem="JCd-Ba-cS5" secondAttribute="leading" id="saD-6a-e1o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JCd-Ba-cS5"/>
                     </view>
+                    <size key="freeformSize" width="375" height="1250"/>
+                    <connections>
+                        <outlet property="DOBfield" destination="qwp-jZ-mgx" id="bJV-Uh-yCN"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i2G-zP-DKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fyu-Rh-xQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="807" y="-573"/>
+            <point key="canvasLocation" x="685.60000000000002" y="-573.01349325337333"/>
         </scene>
     </scenes>
     <resources>
@@ -349,8 +483,4 @@
         <image name="runner1" width="1713" height="2000"/>
         <image name="runner2" width="1743" height="2000"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="FZs-pY-rWu"/>
-        <segue reference="RZP-Nu-2C0"/>
-    </inferredMetricsTieBreakers>
 </document>

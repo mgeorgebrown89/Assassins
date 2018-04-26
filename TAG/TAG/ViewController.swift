@@ -18,7 +18,7 @@ struct login {
 }
 
 //***** register struct for JSON objects *****//
-struct register: Codable {
+/*struct register: Codable {
     let FirstName: String
     let LastName: String
     let DOB: String
@@ -30,7 +30,7 @@ struct register: Codable {
     let Profile: String
     let Password: String
     let ConfirmPassword: String    
-}
+}*/
 
 class ViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 

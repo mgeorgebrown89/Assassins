@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C08A3812090E2EE0023434F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08A3802090E2EE0023434F /* HomeViewController.swift */; };
+		4C08A3832090E6A40023434F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08A3822090E6A40023434F /* RegisterViewController.swift */; };
 		4CC422EF204B985E0053C593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC422EE204B985E0053C593 /* AppDelegate.swift */; };
 		4CC422F1204B985E0053C593 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC422F0204B985E0053C593 /* ViewController.swift */; };
 		4CC422F4204B985E0053C593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC422F2204B985E0053C593 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C08A3802090E2EE0023434F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4C08A3822090E6A40023434F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4CC422EB204B985E0053C593 /* TAG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC422EE204B985E0053C593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CC422F0204B985E0053C593 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 			children = (
 				4CC422EE204B985E0053C593 /* AppDelegate.swift */,
 				4CC422F0204B985E0053C593 /* ViewController.swift */,
+				4C08A3822090E6A40023434F /* RegisterViewController.swift */,
+				4C08A3802090E2EE0023434F /* HomeViewController.swift */,
 				4CC422F2204B985E0053C593 /* Main.storyboard */,
 				4CC422F5204B985E0053C593 /* Assets.xcassets */,
 				4CC422F7204B985E0053C593 /* LaunchScreen.storyboard */,
@@ -151,6 +157,8 @@
 			files = (
 				4CC422F1204B985E0053C593 /* ViewController.swift in Sources */,
 				4CC422EF204B985E0053C593 /* AppDelegate.swift in Sources */,
+				4C08A3812090E2EE0023434F /* HomeViewController.swift in Sources */,
+				4C08A3832090E6A40023434F /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
