@@ -26,14 +26,12 @@ struct register: Codable {
 
 class RegisterViewController: UIViewController {
     
-    @IBOutlet weak var DOBfield: UIDatePicker!
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func submitRegistration(_ sender: Any) {
-        print(DOBfield.date.description)
     }
     
     override func didReceiveMemoryWarning() {
