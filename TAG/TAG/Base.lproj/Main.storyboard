@@ -21,8 +21,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="DZF-K7-lef">
                                 <rect key="frame" x="20" y="70" width="335" height="225.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play Tag!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iM-mC-Bha">
-                                        <rect key="frame" x="80" y="0.0" width="175" height="32.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iM-mC-Bha">
+                                        <rect key="frame" x="145.5" y="0.0" width="44" height="32.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
                                         <color key="textColor" red="0.58823529409999997" green="0.078431372550000003" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -417,7 +417,7 @@
         <image name="default-profile-right" width="1829" height="2000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cHw-dX-B54"/>
+        <segue reference="QjD-Zo-Oyt"/>
         <segue reference="eOb-qL-cfE"/>
     </inferredMetricsTieBreakers>
 </document>

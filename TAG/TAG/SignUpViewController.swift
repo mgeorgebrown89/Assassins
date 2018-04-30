@@ -26,7 +26,9 @@ class SignUpViewController: UIViewController {
             createAccountVC.password = signUpPasswordField.text!
             createAccountVC.confirmPassword = signUpConfirmPasswordField.text!
         }
+        
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
