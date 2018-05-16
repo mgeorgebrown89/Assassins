@@ -18,6 +18,19 @@
 		4C9770DD20ABC3350010835E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9770DC20ABC3350010835E /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4C92587120ACB86100C71110 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4C062EB2209294C0000F7EED /* tag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C062EB5209294C0000F7EED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +99,7 @@
 				4C062EAE209294C0000F7EED /* Sources */,
 				4C062EAF209294C0000F7EED /* Frameworks */,
 				4C062EB0209294C0000F7EED /* Resources */,
+				4C92587120ACB86100C71110 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);

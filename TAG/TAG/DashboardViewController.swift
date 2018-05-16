@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class DashboardViewController: UIViewController {
 
     @IBOutlet weak var userNameLabel: UILabel!
@@ -20,9 +19,9 @@ class DashboardViewController: UIViewController {
 
         let imageUrl = URL(string: imageURLString)
         
-        let imageData = try! Data(contentsOf: imageUrl!)
+        let imageData = try? Data(contentsOf: imageUrl!)
         
-        profilePicImageView.image = UIImage(data: imageData)
+        profilePicImageView.image = UIImage(data: imageData!)
     }
 
     override func didReceiveMemoryWarning() {

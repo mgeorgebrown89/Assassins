@@ -54,8 +54,7 @@ class LoginViewController: UIViewController {
                 self.photo = login.PhotoUrl
 
                 
-               self.performSegue(withIdentifier: "dash", sender: self)
-            } catch let jsonErr {
+            }catch let jsonErr {
                 print("Error serializing json:", jsonErr)
             }
             
@@ -65,15 +64,17 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonPressed(_ sender: Any) {
         email = loginEmailField.text!
         submitGet(email: email!)
+        let dbvc = DashboardViewController()
+        self.present(dbvc, animated: true, completion: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-        if let dashboardControllerVC = segue.destination as? DashboardViewController {
-            dashboardControllerVC.userNameLabel?.text = userName
-            dashboardControllerVC.imageURLString = photo!
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        if let dashboardControllerVC = segue.destination as? DashboardViewController {
+//            dashboardControllerVC.userNameLabel?.text = userName
+//            dashboardControllerVC.imageURLString = photo!
+//        }
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
