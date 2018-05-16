@@ -130,8 +130,9 @@ class UploadPhotosViewController: UIViewController, UIImagePickerControllerDeleg
     func submitPost(post: register, completion:((Error?) -> Void)?) {
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
-        urlComponents.host = "elimination.azurewebsites.net"
-        urlComponents.path = "/api/Account/Post"
+        //urlComponents.host = "elimination.azurewebsites.net"
+        urlComponents.host = "killaframework.azurewebsites.net"//development site
+        urlComponents.path = "/api/Account/Register"
         guard let url = urlComponents.url else { fatalError("Could not create URL from components") }
         
         // Specify this request as being a POST method
@@ -148,7 +149,9 @@ class UploadPhotosViewController: UIViewController, UIImagePickerControllerDeleg
             let jsonData = try encoder.encode(post)
             // ... and set our request's HTTP body
             request.httpBody = jsonData
+            print("\n ******************** sent stuff ************************ \n")
             print("jsonData: ", String(data: request.httpBody!, encoding: .utf8) ?? "no body data")
+            print(" ")
         } catch {
             completion?(error)
         }
@@ -164,10 +167,15 @@ class UploadPhotosViewController: UIViewController, UIImagePickerControllerDeleg
             
             // APIs usually respond with the data sent in POST request
             if let data = responseData, let utf8Representation = String(data: data, encoding: .utf8) {
-                let decoder = JSONDecoder()
-                let player = try! decoder.decode(Player.self, from: data)
-                print(player.PlayerID)
+               
+                print("\n ******************* returned stuff ********************** \n")
                 print("response: ", utf8Representation)
+                print(" ")
+                let decoder = JSONDecoder()
+                let player = try? decoder.decode(Player.self, from: responseData!)
+                if player?.PlayerID != nil {
+                    print(player!.PlayerID)
+                }
             } else {
                 print("no readable data received in response")
             }
@@ -177,7 +185,7 @@ class UploadPhotosViewController: UIViewController, UIImagePickerControllerDeleg
     
     @IBAction func submitTapped(_ sender: Any) {
         let newRegistration = register(Email: email!, Password: password!, ConfirmPassword: confirmPassword!, UserName: userName!, FirstName: firstName!, LastName: lastName!, DOB: DOB!, Phone: phone!, Profile: motto!, Photo: convertPhotoToBase64(image: middlePhotoImageView.image!), PhotoExtension: ".jpg")
-        print(newRegistration)
+        //print(newRegistration)
         submitPost(post: newRegistration) { (error) in
             if let error = error {
                 fatalError(error.localizedDescription)

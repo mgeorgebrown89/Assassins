@@ -15,6 +15,7 @@
 		4C062ECE2093B60C000F7EED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C062ECD2093B60C000F7EED /* SignUpViewController.swift */; };
 		4C062ED02093C000000F7EED /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C062ECF2093C000000F7EED /* CreateAccountViewController.swift */; };
 		4C062ED22093CF8D000F7EED /* UploadPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C062ED12093CF8D000F7EED /* UploadPhotosViewController.swift */; };
+		4C9770DD20ABC3350010835E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9770DC20ABC3350010835E /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4C062ECD2093B60C000F7EED /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4C062ECF2093C000000F7EED /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		4C062ED12093CF8D000F7EED /* UploadPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotosViewController.swift; sourceTree = "<group>"; };
+		4C9770DC20ABC3350010835E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				4C062EB5209294C0000F7EED /* AppDelegate.swift */,
+				4C9770DC20ABC3350010835E /* DashboardViewController.swift */,
 				4C062EB7209294C0000F7EED /* LoginViewController.swift */,
 				4C062ECD2093B60C000F7EED /* SignUpViewController.swift */,
 				4C062ECF2093C000000F7EED /* CreateAccountViewController.swift */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C062ED22093CF8D000F7EED /* UploadPhotosViewController.swift in Sources */,
+				4C9770DD20ABC3350010835E /* DashboardViewController.swift in Sources */,
 				4C062ED02093C000000F7EED /* CreateAccountViewController.swift in Sources */,
 				4C062EB8209294C0000F7EED /* LoginViewController.swift in Sources */,
 				4C062ECE2093B60C000F7EED /* SignUpViewController.swift in Sources */,

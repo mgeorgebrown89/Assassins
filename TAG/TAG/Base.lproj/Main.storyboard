@@ -10,6 +10,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Dashboard View Controller-->
+        <scene sceneID="933-RF-HYQ">
+            <objects>
+                <viewController storyboardIdentifier="DashboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6fL-az-2A3" customClass="DashboardViewController" customModule="tag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MMD-kT-8nd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z34-YA-cy0">
+                                <rect key="frame" x="122" y="40" width="130" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <color key="textColor" red="0.58823529409999997" green="0.078431372550000003" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default-profile" translatesAutoresizingMaskIntoConstraints="NO" id="4E0-2E-05p">
+                                <rect key="frame" x="67" y="92" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ycD-2h-qeD"/>
+                    </view>
+                    <connections>
+                        <outlet property="profilePicImageView" destination="4E0-2E-05p" id="T9x-74-zxi"/>
+                        <outlet property="userNameLabel" destination="Z34-YA-cy0" id="Nvy-gr-siF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4el-Ir-beK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2055" y="363"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -48,6 +80,10 @@
                                                 <state key="normal" title="Login">
                                                     <color key="titleColor" red="0.58823529409999997" green="0.078431372550000003" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FpC-VT-NsB"/>
+                                                    <segue destination="6fL-az-2A3" kind="presentation" id="GTH-g6-Yqg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWy-Ct-cQc">
                                                 <rect key="frame" x="0.0" y="46" width="295" height="36"/>
@@ -80,6 +116,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="loginEmailField" destination="vsZ-de-Ezd" id="zyu-nS-ann"/>
+                        <outlet property="loginPasswordField" destination="x4u-1c-cue" id="h4V-bs-DKl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -377,6 +417,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="submitTapped:" destination="K3l-gx-xZd" eventType="touchUpInside" id="BWi-dc-S7h"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="72g-kV-D5q"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -417,7 +458,8 @@
         <image name="default-profile-right" width="1829" height="2000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QjD-Zo-Oyt"/>
-        <segue reference="eOb-qL-cfE"/>
+        <segue reference="cHw-dX-B54"/>
+        <segue reference="b3A-qa-e9L"/>
+        <segue reference="72g-kV-D5q"/>
     </inferredMetricsTieBreakers>
 </document>
