@@ -82,7 +82,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FpC-VT-NsB"/>
-                                                    <segue destination="6fL-az-2A3" kind="presentation" id="GTH-g6-Yqg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWy-Ct-cQc">
@@ -119,6 +118,7 @@
                     <connections>
                         <outlet property="loginEmailField" destination="vsZ-de-Ezd" id="zyu-nS-ann"/>
                         <outlet property="loginPasswordField" destination="x4u-1c-cue" id="h4V-bs-DKl"/>
+                        <segue destination="6fL-az-2A3" kind="show" identifier="dash" id="E6j-ZQ-Hak"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
